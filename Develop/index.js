@@ -55,17 +55,17 @@ const questions = [
 // Sections:
 // Title, Description, Installation, Usage, Contributing, Tests, Licensing, Questions (includes name, github profile, and email address).
 
-const content = 'HERE IS THE README CONTENT';
-
-fs.writeFile('../README.md', content, err => {
-    if (err) {
-        console.error(err)
-        return
-    }
-});
-
 inquirer.prompt(questions).then((answers) => {
     console.log(JSON.stringify(answers, null, '  '));
+    
+    const content = JSON.stringify(answers);
+    
+    fs.writeFile('../README.md', content, err => {
+        if (err) {
+            console.error(err)
+            return
+        }
+    });
   });
 
 // TODO: Create a function to initialize app
