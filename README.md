@@ -1,9 +1,11 @@
 
-  # d
+  # 
 
   ## Description
-  s
-  [![GitHub license](https://opensource.org/licenses/Apache-2.0)]
+  
+  ![GitHub license](https://img.shields.io/badge/License-Apache_2.0-blue)
+  
+  [/n Link to License](https://opensource.org/licenses/Apache-2.0)
   
   ## Table of Contents
   - [Installation][1]
@@ -14,7 +16,7 @@
   - [Questions][6]
   
   [1]: ## Installation
-  undefined
+  
   
   [2]: ## Usage
   
@@ -29,5 +31,5 @@
   Apache
   
   [6]: ## Questions
-  GitHub Username: 
-  You can reach me with any questions at 
+  GitHub Username: /n
+  You can reach me with any questions at: /n 
