@@ -80,48 +80,48 @@ function renderLicenseLink(license) {
     'https://opensource.org/licenses/MPL-2.0',
     'http://unlicense.org/'];
 
-    if (license === 'Apache') {
-      return licenseLinks[0];
-    }
-    else if (license === 'GPL_3') {
-      return licenseLinks[1];
-    }
-    else if (license === 'BSD_2') {
-      return licenseLinks[2];
-    }
-    else if (license === 'BSD_3') {
-      return licenseLinks[3];
-    }
-    else if (license === 'Boost') {
-      return licenseLinks[4];
-    }
-    else if (license === 'CC Zero') {
-      return licenseLinks[5];
-    }
-    else if (license === 'EPL') {
-      return licenseLinks[6];
-    }
-    else if (license === 'AGPL') {
-      return licenseLinks[7];
-    }
-    else if (license === 'GPL_2') {
-      return licenseLinks[8];
-    }
-    else if (license === 'LGPL') {
-      return licenseLinks[9];
-    }
-    else if (license === 'MIT') {
-      return licenseLinks[10];
-    }
-    else if (license === 'MPL') {
-      return licenseLinks[11];
-    }
-    else if (license === 'Unlicense') {
-      return licenseLinks[12];
-    }
-    else {
-      return '';
-    }
+  if (license === 'Apache') {
+    return licenseLinks[0];
+  }
+  else if (license === 'GPL_3') {
+    return licenseLinks[1];
+  }
+  else if (license === 'BSD_2') {
+    return licenseLinks[2];
+  }
+  else if (license === 'BSD_3') {
+    return licenseLinks[3];
+  }
+  else if (license === 'Boost') {
+    return licenseLinks[4];
+  }
+  else if (license === 'CC Zero') {
+    return licenseLinks[5];
+  }
+  else if (license === 'EPL') {
+    return licenseLinks[6];
+  }
+  else if (license === 'AGPL') {
+    return licenseLinks[7];
+  }
+  else if (license === 'GPL_2') {
+    return licenseLinks[8];
+  }
+  else if (license === 'LGPL') {
+    return licenseLinks[9];
+  }
+  else if (license === 'MIT') {
+    return licenseLinks[10];
+  }
+  else if (license === 'MPL') {
+    return licenseLinks[11];
+  }
+  else if (license === 'Unlicense') {
+    return licenseLinks[12];
+  }
+  else {
+    return '';
+  }
 
 
 
@@ -146,31 +146,36 @@ function generateMarkdown(data) {
   [Link to License](${renderLicenseLink(data.project_license)})
   
   ## Table of Contents
-  - [Installation][1]
-  - [Usage][2]
-  - [Contributing][3]
-  - [Tests][4]
-  - [License][5]
-  - [Questions][6]
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [License](#license)
+  - [Questions](#questions)
   
-  [1]: ## Installation
+  ## Installation
   ${data.project_installation}
   
-  [2]: ## Usage
+  ## Usage
   ${data.project_usage}
   
-  [3]: ## Contributing
+  ## Contributing
   ${data.project_contribution}
   
-  [4]: ## Tests
+  ## Tests
   ${data.project_test}
   
-  [5]: ## License
+  ## License
   ${data.project_license}
   
-  [6]: ## Questions
-  GitHub Username: /n${data.project_github}
-  You can reach me with any questions at: /n ${data.project_email}
+  ## Questions
+  GitHub Username:
+
+  ${data.project_github}
+
+  You can reach me with any questions at:
+  
+  ${data.project_email}
 `;
 }
 

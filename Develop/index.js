@@ -21,12 +21,6 @@ const questions = [
         message: 'Provide installation instructions for the project.',
     },
     {
-        type: 'list',
-        name: 'project_license',
-        message: 'Provide license for the project.',
-        choices: ['Apache','GPL','BSD_2','BSD_3','Boost','CC Zero','EPL','AGPL','GPL','LGPL','MIT','MPL','Unlicense'],
-    },
-    {
         type: 'input',
         name: 'project_usage',
         message: 'Provide usage information for the project.',
@@ -34,12 +28,18 @@ const questions = [
     {
         type: 'input',
         name: 'project_contribution',
-        message: 'Provide contribution guidelines for the project.',
+        message: 'Provide contribution details for the project.',
     },
     {
         type: 'input',
         name: 'project_test',
         message: 'Provide test instructions for the project.',
+    },
+    {
+        type: 'list',
+        name: 'project_license',
+        message: 'Provide license for the project.',
+        choices: ['Apache', 'GPL_3', 'BSD_2', 'BSD_3', 'Boost', 'CC Zero', 'EPL', 'AGPL', 'GPL_2', 'LGPL', 'MIT', 'MPL', 'Unlicense', 'None'],
     },
     {
         type: 'input',
@@ -57,25 +57,22 @@ const questions = [
         message: 'What is your email address?',
     },
 ]
+// Create a function to initialize app
+function init() {
+    inquirer.prompt(questions).then((answers) => {
 
-// Function to write README file
+        const content = generateMarkdown(answers);
 
-inquirer.prompt(questions).then((answers) => {
+        writeToFile('README.md', answers);
 
-    const content = generateMarkdown(answers);
+        function writeToFile(fileName, data) {
+            fs.writeFile('../README.md', content, (err) =>
+                err ? console.log(err) : console.log('Created readme')
+            )
+        }
 
-    writeToFile('README.md', answers);
-
-    function writeToFile(fileName, data) {
-        fs.writeFile('../README.md', content, (err) => 
-            err ? console.log(err) : console.log('Created readme')
-        )
-    } 
-    
-})
-
-// TODO: Create a function to initialize app
-function init() { }
+    })
+}
 
 // Function call to initialize app
 init();

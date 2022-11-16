@@ -1,35 +1,40 @@
 
-  # 
+  # Starcraft
 
   ## Description
+  A game about bug aliens
+  ![GitHub license](https://img.shields.io/badge/License-Boost_1.0-lightblue)
   
-  ![GitHub license](https://img.shields.io/badge/License-Apache_2.0-blue)
-  
-  [/n Link to License](https://opensource.org/licenses/Apache-2.0)
+  [Link to License](https://www.boost.org/LICENSE_1_0.txtcre)
   
   ## Table of Contents
-  - [Installation][1]
-  - [Usage][2]
-  - [Contributing][3]
-  - [Tests][4]
-  - [License][5]
-  - [Questions][6]
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [License](#license)
+  - [Questions](#questions)
   
-  [1]: ## Installation
+  ## Installation
+  Install using DOS idk
   
+  ## Usage
+  Use it to feel bad at playing games
   
-  [2]: ## Usage
+  ## Contributing
+  Made by Blizzard
   
+  ## Tests
+  Dont test - it's confusing
   
-  [3]: ## Contributing
+  ## License
+  Boost
   
+  ## Questions
+  GitHub Username:
+
+  skip_thurm
+
+  You can reach me with any questions at:
   
-  [4]: ## Tests
-  
-  
-  [5]: ## License
-  Apache
-  
-  [6]: ## Questions
-  GitHub Username: /n
-  You can reach me with any questions at: /n 
+  slthurman01@gmail.com
